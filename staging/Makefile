@@ -1,0 +1,3 @@
+all:
+	cp menu.lst iso/boot/grub
+	mkisofs -o boot.iso -b boot/grub/stage2_eltorito  -no-emul-boot -c boot.cat  -boot-load-size 32 -boot-info-table  -l -L -J -R -r iso

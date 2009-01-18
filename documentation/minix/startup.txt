@@ -1,0 +1,5 @@
+How Minix starts up - 
+
+The boot monitor switches control to mpx386.s -> This sets up stack for C and makes a call to cstart in start.c
+
+From cstart, a call is made to prot_init
